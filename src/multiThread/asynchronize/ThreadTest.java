@@ -1,5 +1,8 @@
 package multiThread.asynchronize;
 
+/*
+ * 동기화
+ */
 public class ThreadTest {
 	public static Account myBank = new Account();
 	
