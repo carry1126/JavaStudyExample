@@ -1,5 +1,8 @@
 package multiThread.deadlock;
 
+/*
+ * 데드락
+ */
 public class ThreadTest {
 
 	public static Object Lock1 = new Object();
