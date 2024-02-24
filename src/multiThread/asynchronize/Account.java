@@ -1,10 +1,13 @@
 package multiThread.asynchronize;
 
+/*
+ * 게좌정보
+ */
 public class Account {
 	int balance = 10000;
 	
 	//출금
-	public void withdraw(int money) {
+	public  synchronized void withdraw(int money) {
 		//synchronized (this) {
 		int amount = balance;
 		try {
@@ -18,7 +21,7 @@ public class Account {
 	//}
 	
 	//입금
-	public void deposit(int money) {
+	public synchronized void deposit(int money) {
 		//synchronized (this) {
 		int amount = balance;
 		try { 
